@@ -70,7 +70,8 @@ def handler(state, data, params):
 
     order = None
     if not has_position:
-        state.entry_date = now
+        if OpenLongTrade or OpenShortTrade:
+            state.entry_date = now
 
         if OpenLongTrade:
             cancel_pending_orders()
