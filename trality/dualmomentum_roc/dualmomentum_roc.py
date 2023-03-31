@@ -82,7 +82,7 @@ def handler(state, data, params):
             cancel_pending_orders()
             state.order_exit = None
             order: TralityMarginOrder = margin_order_market_value(symbol=data.symbol, value=-buy_value) # creating market order
-            #target = 0
+            #target = -1
             #margin_order_market_target(data.symbol, target)
 
     StopLossExit = False
