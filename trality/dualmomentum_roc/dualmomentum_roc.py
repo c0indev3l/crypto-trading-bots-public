@@ -11,7 +11,7 @@ FastMA_Length = 2
 SlowMA_Length = 30
 
 ATR_Length = 20
-ATR_Stop = 6
+ATR_Stop = 2  # 6
 
 
 DATE_END_OF_BACKTEST: pd.Timestamp = pd.to_datetime("2023/03/31").date()
